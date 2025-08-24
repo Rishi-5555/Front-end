@@ -10,4 +10,70 @@ o Availability (in stock, out of stock) -->
 
 o Use thead for the table header.  
 o Use colspan or rowspan to merge cells where applicable. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCK LIST</title>
+    <style>
+        .in {
+            color: green;
+        }
+        .out{
+            color: red;
+        }
 
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <caption> STOCK LIST </caption>
+         <thead>
+         <tr>
+            <th>Product name</th>
+            <th>Product image</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Availability</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Squat Rack</td>
+            <td></td>
+            <td>180$</td>
+            <td>GREAT </td>
+            <td class="in">INSTOCK</td>
+        </tr>
+        <tr>
+            <td>Pair Of Dumbbells</td>
+            <td></td>
+            <td>68.96$</td>
+            <td>GREAT Quality</td>
+            <td class="in">INSTOCK</td>
+        </tr>
+        <tr>
+            <td>Ralph Lauren Shirts</td>
+            <td></td>
+            <td>40$</td>
+            <td>GREAT </td>
+            <td class="out">OUT OF STOCK</td>
+        </tr>
+        <tr>
+            <td>Barbells</td>
+            <td></td>
+            <td>100$</td>
+            <td>GREAT </td>
+            <td class="in">INSTOCK</td>
+        </tr>
+        <tr>
+            <td>5kg Protein </td>
+            <td></td>
+            <td>56$</td>
+            <td>GREAT </td>
+            <td class="out">OUT OF STOCK</td>
+        </tr>
+    </table>
+</body>
+</html>
