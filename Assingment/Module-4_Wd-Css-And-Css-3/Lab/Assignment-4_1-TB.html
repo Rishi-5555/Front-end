@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: aliceblue;">
+    <table align="center">
+    <form action="" >
+
+    <tr>
+        <td><label class="txt" for="">Enter your First Name</label></td>
+        <td><input class="bx" type="text" placeholder="Enter your First Name" required pattern="[A-Z][A-Za-z]{2,8}"></td>
+    
+    </tr>
+
+    <tr>
+    <td><label class="txt" for="">Enter your Last Name</label></td>
+    <td><input class="bx" type="text" placeholder="Enter your Last Name" pattern="[A-Z][A-Za-z]{3,8}" required></td>
+    </tr>
+
+    <tr>
+    <td><label class="txt" for="">Enter your Email</label></td>
+    <td><input class="bx" type="email" placeholder="Enter your email" pattern="[A-Za-z0-9._]+@+[a-z]+.+[a-z]{2,45}" required></td>
+    </tr>
+    <tr>
+        <td> <label class="txt" for="">Enter your Password</label></td>
+       <td><input class="bx" type="password" placeholder="Enter your Password" required maxlength="12" pattern="[A-Z][A-Za-z][0-9]{8,12}"></td>
+        
+    </tr>
+    <tr>
+        <td> <label class="txt" for="">Enter your mobile number</label></td>
+        <td><input class="bx" type="tel" placeholder="Enter your Mobile Number" maxlength="10" required pattern="[6-9][0-9]{9}"></td>
+    </tr>
+
+    <tr>
+        <td><label class="txt" for="">Select your Subject </label></td>
+        <td><select class="bx" value=""  > 
+        <option value="Maths">Maths</option>
+        <option value="Science"> Science</option>
+        <option value="Astronomy"> Astronomy</option>
+        <option value="Philosophy">Philosophy</option>
+    </select></td>
+    </tr>
+
+    <tr>
+        <td><label class="txt" for="">Leave a Message</label></td>
+        <td><input class="bx" type="text" size="50px" placeholder="Leave A Message" minlength="50"></td>
+    </tr>
+    <tr >
+        <td   class="bx" id="las" align="center" colspan="2"><input class="btn" type="submit"> <input class="btn" type="reset"></td>
+    </tr>
+    
+    
+    </form>
+    </table>
+</body>
+</html>

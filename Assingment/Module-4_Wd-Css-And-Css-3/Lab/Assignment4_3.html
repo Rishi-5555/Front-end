@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Page Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; /* Demonstrate justify-content */
+      align-items: stretch; /* Demonstrate align-items */
+      padding: 10px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #f0f0f0;
+      padding: 15px;
+      max-width: 200px;
+    }
+
+    main {
+      flex: 3;
+      background-color: #fff;
+      padding: 15px;
+      margin-left: 10px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      aside {
+        max-width: none;
+        margin-bottom: 10px;
+      }
+
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    My Flexbox Webpage
+  </header>
+
+  <div class="container">
+    <aside>
+      <h3>Sidebar</h3>
+      <p>Navigation links or other side content.</p>
+    </aside>
+
+    <main>
+      <h2>Main Content</h2>
+      <p>This is the main area of the page where content goes.</p>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 My Website | Footer content here
+  </footer>
+
+</body>
+</html>

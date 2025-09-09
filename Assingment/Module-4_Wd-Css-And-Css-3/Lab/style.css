@@ -1,0 +1,27 @@
+table{
+    background-color: rgb(2, 103, 103);
+    padding: 10px;
+    border: 11px solid black;
+}
+.txt{
+    color:white;
+}
+.bx{
+    margin: 5px 0px;
+}
+.btn{
+    padding: 10px 10px;
+}
+/*.btn::after{
+    width: 0%;
+    border: black solid 10px;
+}*/
+.btn:hover{
+    color: hsl(189, 74%, 33%);
+    cursor: pointer;
+    
+}
+
+#las{
+    padding-top: 7px;
+}

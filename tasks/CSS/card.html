@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* default for most */
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .profile-card {
+      width: 300px;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-sizing: border-box; /* border included in width */
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #4caf50;
+      margin-bottom: 15px;
+      box-sizing: content-box; /* border NOT included in size */
+      padding: 5px;
+    }
+
+    .profile-name {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .profile-bio {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .follow-btn {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .follow-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <img class="profile-image" src="https://via.placeholder.com/100" alt="Profile Picture">
+    <div class="profile-name">John </div>
+    <div class="profile-bio">Web developer. Coffee enthusiast. Tech explorer.</div>
+    <button class="follow-btn">Follow</button>
+  </div>
+
+</body>
+</html>
