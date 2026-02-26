@@ -1,0 +1,485 @@
+# 1. Introduction to React.js
+
+#1.1 What is React.js? How is it different from other JavaScript frameworks and libraries?
+
+React.js is an open-source JavaScript library used for building user interfaces, especially for single-page applications (SPAs). It was developed by Facebook (now Meta).
+
+**Difference from other frameworks/libraries:**
+
+* React is a **library**, not a full framework (like Angular).
+* It focuses only on the **view layer** (UI).
+* Uses **Virtual DOM** for better performance.
+* Uses **component-based architecture**.
+* More flexible compared to frameworks like Vue.js or Angular.
+
+
+
+# 1.2 Explain the core principles of React such as the virtual DOM and component-based architecture.
+
+**1. Virtual DOM**
+
+* Virtual DOM is a lightweight copy of the real DOM.
+* React updates the Virtual DOM first.
+* It compares (diffing process) with the previous version.
+* Only changed parts are updated in the real DOM.
+* Improves performance.
+
+**2. Component-Based Architecture**
+
+* UI is divided into reusable components.
+* Each component manages its own logic and UI.
+* Components can be nested.
+* Makes code modular and maintainable.
+
+
+
+# 1.3 What are the advantages of using React.js in web development?
+
+* High performance (Virtual DOM).
+* Reusable components.
+* Easy to maintain and scale.
+* Strong community support.
+* SEO friendly.
+* Large ecosystem and libraries.
+
+
+
+# 2. JSX (JavaScript XML)
+
+# 2.1 What is JSX in React.js? Why is it used?
+
+JSX (JavaScript XML) is a syntax extension for JavaScript used in React.
+
+It allows writing HTML-like code inside JavaScript.
+
+**Why used?**
+
+* Makes UI code readable.
+* Easier to design UI structure.
+* Prevents code complexity.
+
+
+
+# 2.2 How is JSX different from regular JavaScript? Can you write JavaScript inside JSX?
+
+Difference:
+
+* JSX looks like HTML.
+* Regular JavaScript does not allow HTML inside it.
+* JSX must be compiled (by Babel) into JavaScript.
+
+Yes, you can write JavaScript inside JSX using **curly braces {}**.
+
+Example:
+
+-- jsx
+<h1>{name}</h1>
+
+
+
+
+# 2.3 Discuss the importance of using curly braces {} in JSX expressions.
+
+Curly braces `{}` are used to:
+
+* Insert variables.
+* Perform calculations.
+* Call functions.
+* Write JavaScript expressions.
+
+Example:
+
+-- jsx
+<p>{2 + 3}</p>
+
+
+
+
+# 3. Components (Functional & Class Components)
+
+# 3.1 What are components in React? Difference between functional and class components?
+
+Components are reusable building blocks of UI in React.
+
+**Functional Components**
+
+* Simple JavaScript functions.
+* Use hooks for state.
+* Easier and modern approach.
+
+**Class Components**
+
+* Use ES6 classes.
+* Have lifecycle methods.
+* Use `this` keyword.
+
+
+# 3.2 How do you pass data to a component using props?
+
+Props (properties) are passed from parent to child component.
+
+Example:
+
+-- jsx
+<Greeting name="Rishi" />
+
+
+Inside component:
+
+-- jsx
+props.name
+
+
+
+
+# 3.3 What is the role of render() in class components?
+
+* `render()` returns JSX.
+* It describes what should appear on screen.
+* React calls it whenever state or props change.
+
+
+
+# 4. Props and State
+
+# 4.1 What are props? How are props different from state?
+
+**Props**
+
+* Passed from parent component.
+* Read-only.
+* Cannot be modified by child.
+
+**State**
+
+* Managed inside component.
+* Can change over time.
+* Used for dynamic data.
+
+
+
+# 4.2 Explain the concept of state in React.
+
+State is an object that stores dynamic data in a component.
+
+When state changes:
+
+* Component re-renders.
+* UI updates automatically.
+
+Used for:
+
+* Forms
+* Counters
+* Login status
+
+
+
+# 4.3 Why is this.setState() used in class components?
+
+* `this.setState()` updates state.
+* It re-renders component.
+* It merges new state with old state.
+* It works asynchronously.
+
+
+
+# 5. Handling Events in React
+
+# 5.1 How are events handled in React? Explain synthetic events.
+
+* React uses camelCase (onClick).
+* Event handlers are passed as functions.
+
+Synthetic Events:
+
+* React wrapper around browser’s native events.
+* Works consistently across browsers.
+
+
+
+# 5.2 Common event handlers in React
+
+* onClick
+* onChange
+* onSubmit
+
+Example:
+
+-- jsx
+<button onClick={handleClick}>Click</button>
+
+
+
+
+# 5.3 Why bind event handlers in class components?
+
+In class components:
+
+* `this` is undefined in event methods.
+* We bind to access component’s state and props.
+
+Example:
+
+-- jsx
+this.handleClick = this.handleClick.bind(this);
+
+
+
+
+# 6. Conditional Rendering
+
+# 6.1 What is conditional rendering?
+
+Displaying UI elements based on conditions.
+
+
+
+# 6.2 Using if-else, ternary, && in JSX
+
+**if-else**
+Used outside JSX.
+
+**Ternary**
+
+-- jsx
+{isLogin ? "Logout" : "Login"}
+
+
+**&& operator**
+
+-- jsx
+{isLogin && <h1>Welcome</h1>}
+
+
+
+
+# 7. Lists and Keys
+
+# 7.1 How to render a list? Why keys are important?
+
+Use `map()` to render lists.
+
+Keys:
+
+* Identify each element uniquely.
+* Help React track changes.
+
+
+
+# 7.2 What are keys? What if not unique?
+
+Keys are unique identifiers.
+
+If not unique:
+
+* React may re-render incorrectly.
+* Performance issues occur.
+
+
+
+# 8. Forms in React
+
+# 8.1 How to handle forms? Controlled components?
+
+Controlled component:
+
+* Form data controlled by state.
+* Input value tied to state.
+* onChange updates state.
+
+
+
+# 8.2 Controlled vs Uncontrolled components
+
+Controlled:
+
+* Uses state.
+* More control.
+
+Uncontrolled:
+
+* Uses refs.
+* DOM handles data.
+
+
+# 9. Lifecycle Methods (Class Components)
+
+# 9.1 What are lifecycle methods?
+
+Methods that run at different phases:
+
+1. Mounting
+2. Updating
+3. Unmounting
+
+
+
+# 9.2 Purpose of lifecycle methods
+
+* componentDidMount() → After component loads.
+* componentDidUpdate() → After update.
+* componentWillUnmount() → Before removal.
+
+
+
+# 10. Hooks
+
+# 10.1 What are hooks? How useState and useEffect work?
+
+Hooks allow functional components to use state and lifecycle features.
+
+* useState() → Manage state.
+* useEffect() → Perform side effects.
+
+
+
+# 10.2 Problems solved by hooks
+
+* Removed need for class components.
+* Avoided complex lifecycle logic.
+* Better code reuse.
+
+
+
+# 10.3 What is useReducer?
+
+* Alternative to useState.
+* Used for complex state logic.
+* Works like Redux reducer.
+
+
+
+# 10.4 Purpose of useCallback & useMemo
+
+* useCallback → Memoizes functions.
+* useMemo → Memoizes values.
+
+
+
+# 10.5 Difference between useCallback & useMemo
+
+* useCallback returns function.
+* useMemo returns computed value.
+
+
+
+# 10.6 What is useRef?
+
+* Creates mutable reference.
+* Access DOM directly.
+* Store values without re-rendering.
+
+
+
+# 11. Routing in React
+
+#11.1 What is React Router?
+
+React Router is a routing library for React.
+
+* Handles navigation in SPA.
+* Changes URL without reloading page.
+
+
+
+# 11.2 Difference between components
+
+* BrowserRouter → Wraps app.
+* Route → Defines route.
+* Link → Navigation link.
+* Switch → Renders first matched route.
+
+
+
+# 12. JSON Server & Firebase
+
+# 12.1 What are RESTful web services?
+
+* Follow REST architecture.
+* Use HTTP methods (GET, POST, PUT, DELETE).
+* Stateless communication.
+
+
+
+#12.2 What is Json-Server?
+
+Json-Server:
+
+* Fake REST API.
+* Uses JSON file as database.
+* Used for testing.
+
+
+
+# 12.3 How to fetch data? Role of fetch() or axios()
+
+* fetch() → Built-in JS method.
+* axios() → Promise-based library.
+* Used to make API requests.
+
+
+
+# 12.4 What is Firebase?
+
+Firebase is a backend platform by Google.
+
+Features:
+
+* Authentication
+* Realtime database
+* Firestore
+* Hosting
+* Cloud functions
+
+
+
+# 12.5 Importance of handling errors & loading states
+
+* Improves user experience.
+* Shows spinner while loading.
+* Displays error message if API fails.
+* Prevents blank screen.
+
+
+
+# 13. Context API
+
+13.1 What is Context API?
+
+Built-in React feature to manage global state.
+
+Used to avoid prop drilling.
+
+
+
+ 13.2 createContext() and useContext()
+
+* createContext() → Creates context.
+* useContext() → Access context value.
+
+-
+
+# 14. State Management
+
+ 14.1 What is Redux? Core concepts?
+
+Redux is a state management library.
+
+Core concepts:
+
+* Actions → Describe what happened.
+* Reducers → Update state.
+* Store → Holds global state.
+
+
+
+# 14.2 How Recoil simplifies state management?
+
+Recoil:
+
+* Simpler syntax.
+* No boilerplate like Redux.
+* Works easily with React hooks.
+
+

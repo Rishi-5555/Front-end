@@ -1,0 +1,268 @@
+# Module #3 – Introduction to OOPS Programming
+
+---
+
+# 1. Introduction to C++
+
+## 1.1 What are the key differences between Procedural Programming and Object-Oriented Programming (OOP)?
+
+-> Procedural Programming (POP)        
+
+ -	Focuses on functions             
+ -	Data and functions are separate  
+ -	Follows top-down approach          
+ -	Less secure                        
+ -	Difficult to manage large programs 
+ -	No concept of inheritance          
+
+
+-> Object-Oriented Programming (OOP)
+  -	Focuses on objects and classes  
+  -	Data and functions are combined
+  -	Follows bottom-up approach
+  -	More secure due to data hiding
+  -	Easier to manage large programs
+  -	Supports inheritance
+---
+
+## 1.2 List and explain the main advantages of OOP over POP.
+
+1. **Encapsulation** – Protects data by restricting direct access.
+2. **Inheritance** – Promotes code reusability.
+3. **Polymorphism** – Allows the same function to behave differently.
+4. **Abstraction** – Hides implementation details.
+5. **Modularity** – Breaks program into manageable objects.
+6. **Better Security** – Data is protected within classes.
+7. **Easy Maintenance** – Code is easier to update and modify.
+
+---
+
+## 1.3 Explain the steps involved in setting up a C++ development environment.
+
+1. Install a C++ compiler.
+2. Install an IDE (Integrated Development Environment).
+3. Configure the compiler within the IDE.
+4. Create a new project or file.
+5. Write the program code.
+6. Compile the program.
+7. Run and debug the program.
+
+---
+
+## 1.4 What are the main input/output operations in C++?
+
+The main input/output operations are:
+
+* **cin** – Used for taking input from the user.
+* **cout** – Used for displaying output on the screen.
+* **cerr** – Used for displaying error messages.
+* **clog** – Used for logging output.
+* **endl** – Used to insert a new line.
+
+---
+
+# 2. Variables, Data Types, and Operators
+
+## 2.1 What are the different data types available in C++?
+
+### 1. Basic Data Types
+
+* int
+* float
+* double
+* char
+* bool
+
+### 2. Derived Data Types
+
+* Array
+* Pointer
+* Reference
+
+### 3. User-Defined Data Types
+
+* struct
+* union
+* enum
+* class
+
+---
+
+## 2.2 Explain the difference between implicit and explicit type conversion in C++.
+
+* **Implicit Conversion** is automatically performed by the compiler when converting from a smaller data type to a larger data type.
+* **Explicit Conversion** is manually performed by the programmer using type casting to convert one data type to another.
+
+---
+
+## 2.3 What are the different types of operators in C++?
+
+1. Arithmetic Operators
+2. Relational Operators
+3. Logical Operators
+4. Assignment Operators
+5. Bitwise Operators
+6. Increment and Decrement Operators
+7. Conditional (Ternary) Operator
+8. Special Operators
+
+---
+
+## 2.4 Explain the purpose and use of constants and literals in C++.
+
+* **Constants** are fixed values that cannot be changed during program execution.
+* They are used to protect data from modification.
+* **Literals** are fixed values written directly in the program code.
+* They represent constant values such as numbers, characters, or strings.
+
+---
+
+# 3. Control Flow Statements
+
+## 3.1 What are conditional statements in C++?
+
+Conditional statements control the flow of execution based on conditions.
+
+* **if-else statement** executes code depending on whether a condition is true or false.
+* **switch statement** selects one block of code from multiple options based on a variable’s value.
+
+---
+
+## 3.2 What is the difference between for, while, and do-while loops?
+
+* **for loop** is used when the number of iterations is known.
+* **while loop** is used when the number of iterations is not known but the condition is checked before execution.
+* **do-while loop** executes at least once because the condition is checked after execution.
+
+---
+
+## 3.3 How are break and continue statements used in loops?
+
+* **break** immediately terminates the loop.
+* **continue** skips the current iteration and moves to the next iteration.
+
+---
+
+## 3.4 Explain nested control structures.
+
+Nested control structures occur when one control statement (like a loop or condition) is placed inside another control statement. They are commonly used for complex logic such as pattern printing or matrix operations.
+
+---
+
+# 4. Functions and Scope
+
+## 4.1 What is a function in C++?
+
+A function is a block of code that performs a specific task.
+
+* **Function Declaration** specifies the function name, return type, and parameters.
+* **Function Definition** contains the actual code of the function.
+* **Function Calling** is the process of executing the function.
+
+---
+
+## 4.2 What is the scope of variables in C++?
+
+* **Local Variables** are declared inside a function and can only be accessed within that function.
+* **Global Variables** are declared outside all functions and can be accessed throughout the program.
+
+---
+
+## 4.3 Explain recursion in C++.
+
+Recursion is a technique where a function calls itself to solve a problem. It must have a base condition to stop the recursive calls and prevent infinite execution.
+
+---
+
+## 4.4 What are function prototypes in C++? Why are they used?
+
+Function prototypes declare a function before it is defined.
+
+They are used to:
+
+* Inform the compiler about the function’s name and parameters.
+* Ensure correct usage of functions.
+* Allow functions to be defined after the main function.
+
+---
+
+# 5. Arrays and Strings
+
+## 5.1 What are arrays in C++?
+
+Arrays are data structures that store multiple values of the same data type in contiguous memory locations.
+
+* **Single-dimensional arrays** store elements in a linear form.
+* **Multi-dimensional arrays** store elements in table format (rows and columns).
+
+---
+
+## 5.2 Explain string handling in C++.
+
+C++ supports strings using:
+
+* Character arrays
+* The string class
+
+String handling allows storing, manipulating, and processing textual data.
+
+---
+
+## 5.3 How are arrays initialized in C++?
+
+Arrays can be initialized at the time of declaration by assigning values directly.
+
+* One-dimensional arrays are initialized using a list of values.
+* Two-dimensional arrays are initialized using row and column values.
+
+---
+
+## 5.4 Explain string operations and functions in C++.
+
+Common string operations include:
+
+* Finding length
+* Concatenation
+* Comparing strings
+* Extracting substrings
+* Searching characters
+* Replacing content
+
+These operations help manipulate text data effectively.
+
+---
+
+# 6. Introduction to Object-Oriented Programming
+
+## 6.1 Explain the key concepts of Object-Oriented Programming (OOP).
+
+1. **Encapsulation** – Binding data and methods together.
+2. **Abstraction** – Hiding internal implementation details.
+3. **Inheritance** – Acquiring properties from another class.
+4. **Polymorphism** – One function having multiple forms.
+
+---
+
+## 6.2 What are classes and objects in C++?
+
+* A **class** is a blueprint or template used to create objects.
+* An **object** is an instance of a class that contains data and functions.
+
+---
+
+## 6.3 What is inheritance in C++?
+
+Inheritance is a mechanism where one class derives properties and behaviors from another class. It promotes code reusability and hierarchical classification.
+
+---
+
+## 6.4 What is encapsulation in C++? How is it achieved?
+
+Encapsulation is the process of combining data and functions into a single unit (class) and restricting direct access to data.
+
+It is achieved by:
+
+* Declaring data members as private.
+* Providing public methods to access or modify the data.
+
+
