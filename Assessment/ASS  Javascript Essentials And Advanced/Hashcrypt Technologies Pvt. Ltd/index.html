@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Interaction System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Hashcrypt Customer Support</h1>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Submit Complaint</a>
+<a href="#">View Data</a>
+</nav>
+
+<section class="slider">
+<h2>Welcome to Our Digital Support System</h2>
+<p>Fast • Paperless • Efficient</p>
+</section>
+
+<div class="container">
+
+<h2>Customer Complaint Form</h2>
+
+<form id="complaintForm">
+
+<label>Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+<small class="error" id="nameError"></small>
+
+<label>Email</label>
+<input type="text" id="email" placeholder="Enter email">
+<small class="error" id="emailError"></small>
+
+<label>Phone</label>
+<input type="text" id="phone" placeholder="Enter phone number">
+<small class="error" id="phoneError"></small>
+
+<label>Vehicle</label>
+<input type="text" id="vehicle" placeholder="Vehicle model">
+<small class="error" id="vehicleError"></small>
+
+<label>Complaint</label>
+<textarea id="complaint" placeholder="Write complaint"></textarea>
+<small class="error" id="complaintError"></small>
+
+<div class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+</form>
+
+<p id="successMessage"></p>
+
+<h2>Customer Submissions</h2>
+
+<table id="dataTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Phone</th>
+<th>Email</th>
+<th>Vehicle</th>
+<th>Complaint</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+</tbody>
+
+</table>
+
+<p id="noData"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
